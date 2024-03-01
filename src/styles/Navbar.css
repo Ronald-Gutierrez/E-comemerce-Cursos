@@ -1,0 +1,72 @@
+.root{
+  flex-grow: 1;
+  margin-bottom: "7rem";
+  display: "flex";
+  height: 100px;
+  
+}
+.appBar{
+  padding: "0.5rem 0";
+  display: "flex";
+  height: "7rem";
+  background-color: rgb(68, 151, 186) !important; /* Cambia el color de fondo del AppBar a rojo */
+
+}
+
+.navbar-buttons {
+  margin-left: auto;
+}
+
+.navbar-buttons button {
+  background-color: #4caf50; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.navbar-buttons button:hover {
+  background-color: #8646a3; /* Cambia el color de fondo al pasar por encima */
+}
+.logo-image {
+  width: 100px;
+  height: 100px;
+  position: relative; 
+}
+
+.cart-icon{
+  width: 40px;
+  color: #121c18;
+}
+
+.navbar-buttons {
+  display: flex; 
+  align-items: center; 
+  gap: 30px; 
+}
+.navbar-butons-options  {
+  color: rgb(20, 5, 5); 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-left: 60px;
+}
+@keyframes blink-scale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.blinking-scale {
+  animation: blink-scale 1s infinite;
+}
